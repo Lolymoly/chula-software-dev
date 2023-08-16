@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Booth Register</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<div class="main-div">
+			<a href="index.html"
+				><button class="back-button">
+					<img src="../public/return-icon.png" width="50" /> ย้อนกลับ
+				</button></a
+			>
+			<h1 class="register-main-text">ลงทะเบียนเช่าพื้นที่แสดงสินค้าภายในงาน</h1>
+
+			<form class="register-form">
+				<div>
+					<label for="companyName"
+						>ชื่อบริษัท <span class="required">*</span></label
+					>
+					<div>
+						<input
+							type="text"
+							id="companyName"
+							name="companyName"
+							required
+							class="my-input text-input"
+						/>
+					</div>
+				</div>
+
+				<div>
+					<label for="booth_size"
+						>ขนาดบูธ <span class="required">*</span></label
+					>
+					<div>
+						<select id="booth_size" name="booth_size" class="my-input">
+							<option value="10">10 x 10 ฟุต</option>
+							<option value="15">10 x 15 ฟุต</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<label>ต้องการโต๊ะสำหรับใช้ภายในบูธ</label>
+					<div class="my-input">
+						<input
+							type="checkbox"
+							id="service1"
+							name="services[]"
+							value="Service 1"
+						/>
+						ใช่
+					</div>
+				</div>
+				<div>
+					<label for="numChairs"
+						>จำนวนเก้าอี้ <span class="required">*</span></label
+					>
+					<div>
+						<input
+							type="number"
+							id="numChairs"
+							name="numChairs"
+							min="1"
+							max="10"
+							required
+							class="my-input"
+						/>
+					</div>
+				</div>
+				<div>
+					<label for="personName"
+						>ชื่อผู้ติดต่อ <span class="required">*</span></label
+					>
+					<div>
+						<input
+							type="text"
+							id="personName"
+							name="personName"
+							required
+							class="my-input text-input"
+						/>
+					</div>
+				</div>
+
+				<div>
+					<label for="phoneNumber"
+						>เบอร์โทรศัพท์ผู้ติดต่อ <span class="required">*</span></label
+					>
+					<div>
+						<input
+							type="tel"
+							id="phoneNumber"
+							name="phoneNumber"
+							pattern="[0-9]{10}"
+							required
+							class="my-input text-input"
+						/>
+					</div>
+				</div>
+
+				<div>
+					<input type="submit" value="Submit" class="action-button" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
