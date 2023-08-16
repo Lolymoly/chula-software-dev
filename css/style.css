@@ -136,3 +136,7 @@ h2 {
 .back-button:hover {
 	cursor: pointer;
 }
+
+.error-message {
+	color: red;
+}

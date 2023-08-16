@@ -13,6 +13,7 @@
 
 		<!-- css -->
 		<link rel="stylesheet" href="../css/style.css" />
+		<script src="../script/register.js"></script>
 	</head>
 	<body>
 		<div class="main-div">
@@ -33,7 +34,6 @@
 							type="text"
 							id="companyName"
 							name="companyName"
-							required
 							class="my-input text-input"
 						/>
 					</div>
@@ -45,6 +45,7 @@
 					>
 					<div>
 						<select id="booth_size" name="booth_size" class="my-input">
+							<option value="" disabled selected>เลือกขนาด</option>
 							<option value="10">10 x 10 ฟุต</option>
 							<option value="15">10 x 15 ฟุต</option>
 						</select>
@@ -87,7 +88,6 @@
 							type="text"
 							id="personName"
 							name="personName"
-							required
 							class="my-input text-input"
 						/>
 					</div>
@@ -103,7 +103,6 @@
 							id="phoneNumber"
 							name="phoneNumber"
 							pattern="[0-9]{10}"
-							required
 							class="my-input text-input"
 						/>
 					</div>
