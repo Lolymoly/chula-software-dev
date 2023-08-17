@@ -164,9 +164,9 @@ h2 {
   margin: 0 10vw;
   text-align: center;
   padding-top: 40vh;
+}
 
-  opacity: 0;
-  transform: translateX(-20px);
+.animate-slide {
   animation: slideIn 1s forwards;
 }
 
@@ -184,4 +184,6 @@ h2 {
 
 .number-and-desc {
   width: 30%;
+  opacity: 0;
+  transform: translateX(-10vw);
 }
