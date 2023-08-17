@@ -1,142 +1,187 @@
 .header {
-	display: flex;
-	flex-direction: column;
-	/* margin-top: 8vh; */
-	text-align: center;
-	font-family: "Prompt", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 8vh; */
+  text-align: center;
+  font-family: "Prompt", sans-serif;
 }
 
 .cover-image {
-	text-align: center;
-	display: flex;
-	justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .image-div {
-	margin-top: 8vh;
-	display: flex;
-	justify-content: center;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
 }
 
 .cover-image {
-	width: 100%;
-	height: 300px;
+  width: 100%;
+  height: 40vh;
+}
+body {
+  margin: 0;
 }
 
-body {
-	background-image: url("../public/drug_pattern.jpg");
-	background-repeat: repeat;
-	background-size: 25%;
-	background-color: rgba(255, 255, 255, 0.7);
-	background-blend-mode: lighten;
+.body1 {
+  margin: 0;
+  background-image: url("../public/drug_pattern.jpg");
+  background-repeat: repeat;
+  background-size: 25%;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
 }
 
 .main-div {
-	width: 85%;
-	height: 100vh;
+  width: 85%;
+  height: 100vh;
+  min-height: 100vh;
 
-	margin-top: -10px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: rgba(255, 255, 255, 0.87);
-	font-family: "Prompt", sans-serif !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-family: "Prompt", sans-serif !important;
+}
+
+.main-div-2 {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(90deg, #000000 0%, #2c3e50 74%);
 }
 
 h1,
 h2 {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .heading-text {
-	font-size: 3.5vw;
-	font-weight: 800;
-	margin-top: 8vh;
-	margin-bottom: 0;
+  font-size: 3.5vw;
+  font-weight: 800;
+  margin-top: 8vh;
+  margin-bottom: 0;
 }
 
 .heading-desc-text {
-	font-size: 1.85vw;
+  font-size: 1.85vw;
 }
 
 .action-div {
-	display: flex;
-	justify-content: center;
-	gap: 2vw;
-	margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 8vh;
 }
 
 .action-div button,
 .action-button {
-	padding: 8px 16px;
-	border-radius: 8px;
-	color: #0070ff;
-	border: 1px solid #0070ff;
-	background: rgba(232, 246, 255, 0.5);
-	font-family: "Prompt", sans-serif;
-	font-size: 1vw;
-	width: 12vw;
-	font-weight: 500;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  color: #0070ff;
+  border: 1px solid #0070ff;
+  background: rgba(232, 246, 255, 0.5);
+  font-family: "Prompt", sans-serif;
+  font-size: 1vw;
+  width: 12vw;
+  height: 3vw;
+  font-weight: 500;
 }
 
 .action-div button:hover,
 .action-button:hover {
-	cursor: pointer;
-	background: rgba(232, 246, 255, 0.9);
+  cursor: pointer;
+  background: rgba(232, 246, 255, 0.9);
 }
 
 .register-main-text {
-	padding-top: 6vh;
-	margin-bottom: 40px;
+  padding-top: 6vh;
+  margin-bottom: 40px;
 }
 
 .register-form {
-	display: flex;
-	flex-direction: column;
-	margin-left: 10vw;
-	gap: 4vh;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  gap: 4vh;
+  justify-content: center;
 }
 
 .register-form label {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .register-form .action-button {
-	margin-top: 20px;
-	height: 40px;
-	width: 6vw;
+  margin-top: 20px;
+  height: 40px;
+  width: 6vw;
 }
 
 .my-input {
-	margin-top: 10px;
-	height: 20px;
+  margin-top: 10px;
+  height: 20px;
 }
 
 .text-input {
-	width: 30vw;
+  width: 30vw;
 }
 
 .required {
-	color: red;
+  color: red;
 }
 
 .back-button {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	top: 7.5vh;
-	left: 17vw;
-	background: none;
-	border: none;
-	font-family: "Prompt", sans-serif;
-	font-weight: 500;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 7.5vh;
+  left: 17vw;
+  background: none;
+  border: none;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
 }
 
 .back-button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .error-message {
-	color: red;
+  color: red;
+}
+
+.description-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+  margin: 0 10vw;
+  text-align: center;
+  padding-top: 40vh;
+
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.number-div-with-plus {
+  font-size: 4vw;
+  margin-bottom: 2vh;
+}
+
+.number-and-desc {
+  width: 30%;
 }
